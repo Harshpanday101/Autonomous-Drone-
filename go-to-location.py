@@ -21,7 +21,7 @@ def location_callback(self, attribute_name, message):
 target_location = (-35.364262, 149.165637)
 
 print("Trying to connect to the vehicle...")
-vehicle = dronekit.connect(ip="127.0.0.1:14550", wait_ready=True)
+vehicle = dronekit.connect(ip="127.0.0.1:14550", wait_ready=True)  """put your drone ip address here"""
 print("Connected to the vehicle.")
 vehicle.target_distance = -1.0
 vehicle.add_attribute_listener("location", location_callback)
